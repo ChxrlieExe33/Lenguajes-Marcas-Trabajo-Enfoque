@@ -1,0 +1,119 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    background-color: #13293D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #E8F1F2;
+    font-size: x-large;
+}
+
+.navLeft:hover {
+    color: #1B98E0;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navLink {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: #E8F1F2;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    color: #1B98E0;
+}
+
+.hero {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    background-color: #E8F1F2;
+    
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    padding: 30px;
+    flex-wrap: wrap;
+    color: #13293D;
+}
+
+.heroText h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.heroText p {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.heroImg {
+    width: 45%;
+    background-image: url('recursos/codigo-php.jpg');
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.quienesSomos {
+    height: 600px;
+    background-color: #13293D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E8F1F2;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.quienesSomos h1 {
+    margin-bottom: 25px;
+    align-self: center;
+}
+
+.quienesSomos p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.listaTecnologias {
+    margin-bottom: 25px;
+}
+
+.listaTecnologias li {
+    font-size: 20px;
+}
