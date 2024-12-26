@@ -113,70 +113,136 @@
 
                 <video src="recursos/video_corporativo.mp4" height="400px" autoplay controls></video>
 
-                <span class="quienesSomosBorder"></span>
-
             </section>
 
             <!-- Servicios -->
 
             <section id="servicios" class="servicios">
 
-                <h1>Nuestros Servicios</h1>
+                <table>
 
-                <!-- Below must be done as a table -->
+                    <caption>Nuestros Servicios</caption>
 
-                <!-- <div class="listaServicios">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="servicioTitulo">Desarrollo de Aplicación web</td>
+                            <td class="servicioDesc">Desarrollo de una aplicacion web desde 0 con las tecnologias mas adecuadas para el proyecto.</td>
+                            <td>
+                                <img src="recursos/webdev.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="servicioTitulo">Mantenimiento de Aplicación web</td>
+                            <td class="servicioDesc">Mantenimiento de aplicaciones web con problemas o errores.</td>
+                            <td>
+                                <img src="recursos/debug.webp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="servicioTitulo">Actualización de Aplicación web</td>
+                            <td class="servicioDesc">Tienes una aplicación web programado con tecnologias antiguas, podemos reconstruirlo utilizando tecnologias actuales.</td>
+                            <td>
+                                <img src="recursos/tecnologias.jpg">
+                            </td>
+                        </tr>
+                    </tbody>
 
-                    <div class="servicio">
-                        <h1>Desarrollo de aplicación web</h1>
-
-                        <p>Necesitas una aplicacion web full stack para tu negocio, pues aqui estamos para ayudarte</p>
-
-                        <p>Podemos utilizar las tecnologias que tu prefieras, pero si no tienes muchos conocimientos tecnicos, usaremos lo que sea mas adecuado para tu proyecto.</p>
-
-                        <p>Contacta con nosotros para recibir precios.</p>
-
-                    </div>
-
-                    <div class="servicio">
-                        <h1>Mantenimiento de aplicación web</h1>
-
-                        <p>Necesitas un mantenimiento en tu aplicacion web que tiene algun problema? Podemos ayudarte!</p>
-
-                        <p>Podemos solucionar cualquier problema que esta teniendo tu aplicacion</p>
-
-                        <p>Precio depende de la severidad del problema, contacta con nosotros para recibir un precio</p>
-
-                    </div>
-
-                    <div class="servicio">
-                        <h1>Actualizacion de aplicación web</h1>
-
-                        <p>Tienes una aplicación web programado utilizando tecnologias obsoletas que quieres actualizar a un estandar moderno? Tambien podemos ayudarte!</p>
-
-                        <p>Nuestro equipo puede cojer cualquier aplicacion que nos proporcionas y desarrollarlo en una tecnologia mas actual</p>
-
-                        <p>Los beneficios de hacer esto son:</p>
-
-                        <ul>
-                            <li>-> Mejor experiencia de usuario</li>
-                            <li>-> Mejor escalabilidad</li>
-                            <li>-> Reduce posibilidad de vulnerabilidades</li>
-                        </ul>
-
-                    </div>
-
-                </div>-->
+                </table>
 
             </section>
 
             <!-- Contacto -->
 
-            <section id="contacto" class="contacto"></section>
+            <section id="contacto" class="contacto">
+
+                <h1 class="contactoTitle">Contacta con nosotros</h1>
+
+                <p>Telefono 654 00 45 04</p>
+
+                <p>consultas@codecraftersstudio.es</p>
+
+                <h1 class="solicitaInformacionTitle">Solicita informacion</h1>
+
+                <form class="formContacto">
+
+                    <input class="inputBox" type="text" name="nombre" required placeholder="Nombre">
+                    <input class="inputBox" type="email" name="correo" required placeholder="Correo Electronico">
+                    <input class="inputBox" type="text" name="telefono" required placeholder="Nº Telefono">
+                    <textarea name="informacion" rows="5" cols="50" placeholder="Introduce lo que quieres consultar"></textarea>
+                
+                    <span>
+                        <input class="formButton" type="reset">
+                        <input class="formButton" type="submit">
+                    </span>
+
+                </form>
+
+            </section>
 
             <!-- Trabaja con nosotros -->
 
-            <section id="trabajarConNosotros" class="trabajarConNosotros"></section>
+            <section id="trabajarConNosotros" class="trabajarConNosotros">
+
+                <h1>Quieres Trabajar con nosotros?</h1>
+
+                <p>Si crees que tienes la experiencia adecuada para unirte a nuestro equipo, envianos una solicitud con toda tu información.</p>
+
+                <form action="" class="trabajarConNosotrosForm">
+
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="fname">Nombre</label>
+                        <input name="fname" type="text" required placeholder="Tu Nombre">
+
+                        <label for="apellidos">Apellidos</label>
+                        <input name="apellidos" type="text" required placeholder="Tus apellidos">
+
+                        <label for="dni">DNI</label>
+                        <input name="dni" type="text" required placeholder="DNI / NIE">
+
+                        <label for="ciudad">Ciudad</label>
+                        <input name="ciudad" type="text" required placeholder="Málaga">
+
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input name="nacionalidad" type="text" required placeholder="Español">
+
+                        <label for="codpostal">Codigo Postal</label>
+                        <input name="codpostal" type="number" required placeholder="29640">
+
+                        <label for="telefono">Telefono</label>
+                        <input name="telefono" type="text" required placeholder="666 66 66 66">
+
+                        <label for="email">Correo</label>
+                        <input name="email" type="email" required placeholder="persona@mail.com">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Formación</legend>
+                        
+                        <label for="titulacion">Titulacion recibida</label>
+                        <input name="titulacion" type="text" required placeholder="Ingenieria Informatica">
+
+                        <label for="fechaInicio">Fecha de Inicio</label>
+                        <input name="fechaInicio" type="date" required>
+
+                        <label for="fechaFin">Fecha de finalización</label>
+                        <input name="fechaFin" type="date" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Idiomas</legend>
+                    </fieldset>
+
+                </form>
+
+            </section>
 
         </main>
 
