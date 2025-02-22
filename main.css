@@ -158,6 +158,10 @@ body {
     margin-bottom: 20px;
 }
 
+#videoCorporativo {
+    border-radius: 2%;
+}
+
 .listaTecnologias {
     margin-bottom: 25px;
 }
@@ -299,6 +303,8 @@ body {
 
 .trabajarConNosotros fieldset {
     padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 20px;
     border: 2px solid #E8F1F2;
 }
@@ -315,10 +321,66 @@ body {
     border-radius: 10px;
 }
 
-.trabajarConNosotrosForm {
+.trabajarConNosotros select {
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.trabajarConNosotrosSubmit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabajarConNosotrosForms {
     padding: 35px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #13293D, #001a36);
+    color: white;
+    font-size: 20px;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    height: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E8F1F2;
+    display: block;
+    margin-top: 15px;
+    font-size: 25px;
+    align-self: center;
+}
+
+.footerRight p {
+    margin-bottom: 30px;
+}
+
