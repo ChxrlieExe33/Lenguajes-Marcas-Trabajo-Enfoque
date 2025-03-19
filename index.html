@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +47,7 @@
 
                 </div>
 
-                <img class="heroImg" src="recursos/codigo-php.jpg">
+                <img class="heroImg" src="recursos/codigo-php.jpg" alt="Codigo Fuente PHP">
 
             </section>
 
@@ -69,7 +69,7 @@
 
                     <div class="persona">
 
-                        <img src="recursos/persona1.webp"></img>
+                        <img src="recursos/persona1.webp" alt="Alejandro Martínez">
 
                         <h1>Alejandro Martínez</h1>
 
@@ -79,7 +79,7 @@
 
                     <div class="persona">
 
-                        <img src="recursos/persona2.webp"></img>
+                        <img src="recursos/persona2.webp" alt="Carlos Pérez">
 
                         <h1>Carlos Pérez</h1>
 
@@ -89,7 +89,7 @@
 
                     <div class="persona">
 
-                        <img src="recursos/persona3.webp"></img>
+                        <img src="recursos/persona3.webp" alt="Laura Díaz">
 
                         <h1>Laura Díaz</h1>
 
@@ -99,7 +99,7 @@
 
                     <div class="persona">
 
-                        <img src="recursos/persona4.webp"></img>
+                        <img src="recursos/persona4.webp" alt="Luis García">
 
                         <h1>Luis García</h1>
 
@@ -111,13 +111,15 @@
 
                 <h1>Nuestro trabajo</h1>
 
-                <video src="recursos/video_corporativo.mp4" id="videoCorporativo" height="400px" autoplay controls loop></video>
+                <video src="recursos/video_corporativo.mp4" id="videoCorporativo" autoplay controls loop></video>
 
             </section>
 
             <!-- Servicios -->
 
             <section id="servicios" class="servicios">
+
+                <h2>Servicios que ofrecemos</h2>
 
                 <table>
 
@@ -135,21 +137,21 @@
                             <td class="servicioTitulo">Desarrollo de Aplicación web</td>
                             <td class="servicioDesc">Desarrollo de una aplicacion web desde 0 con las tecnologias mas adecuadas para el proyecto.</td>
                             <td>
-                                <img src="recursos/webdev.jpg">
+                                <img src="recursos/webdev.jpg" alt="Desarrollo Web">
                             </td>
                         </tr>
                         <tr>
                             <td class="servicioTitulo">Mantenimiento de Aplicación web</td>
                             <td class="servicioDesc">Mantenimiento de aplicaciones web con problemas o errores.</td>
                             <td>
-                                <img src="recursos/debug.webp">
+                                <img src="recursos/debug.webp" alt="Debugging de una aplicacion web">
                             </td>
                         </tr>
                         <tr>
                             <td class="servicioTitulo">Actualización de Aplicación web</td>
                             <td class="servicioDesc">Tienes una aplicación web programado con tecnologias antiguas, podemos reconstruirlo utilizando tecnologias actuales.</td>
                             <td>
-                                <img src="recursos/tecnologias.jpg">
+                                <img src="recursos/tecnologias.jpg" alt="Tecnologias web">
                             </td>
                         </tr>
                     </tbody>
@@ -194,58 +196,58 @@
 
                 <p>Si crees que tienes la experiencia adecuada para unirte a nuestro equipo, envianos una solicitud con toda tu información.</p>
 
-                <form action="">
+                <form>
 
                     <div class="trabajarConNosotrosForms">
 
                         <fieldset>
                             <legend>Datos Personales</legend>
                             <label for="fname">Nombre</label>
-                            <input name="fname" type="text" required placeholder="Tu Nombre">
+                            <input id="fname" name="fname" type="text" required placeholder="Tu Nombre">
     
                             <label for="apellidos">Apellidos</label>
-                            <input name="apellidos" type="text" required placeholder="Tus apellidos">
+                            <input id="apellidos" name="apellidos" type="text" required placeholder="Tus apellidos">
     
                             <label for="dni">DNI</label>
-                            <input name="dni" type="text" required placeholder="DNI / NIE">
+                            <input id="dni" name="dni" type="text" required placeholder="DNI / NIE">
     
                             <label for="ciudad">Ciudad</label>
-                            <input name="ciudad" type="text" required placeholder="Málaga">
+                            <input id="ciudad" name="ciudad" type="text" required placeholder="Málaga">
     
                             <label for="nacionalidad">Nacionalidad</label>
-                            <input name="nacionalidad" type="text" required placeholder="Español">
+                            <input id="nacionalidad" name="nacionalidad" type="text" required placeholder="Español">
     
                             <label for="codpostal">Codigo Postal</label>
-                            <input name="codpostal" type="number" required placeholder="29640">
+                            <input id="codpostal" name="codpostal" type="number" required placeholder="29640">
     
                             <label for="telefono">Telefono</label>
-                            <input name="telefono" type="text" required placeholder="666 66 66 66">
+                            <input id="telefono" name="telefono" type="text" required placeholder="666 66 66 66">
     
                             <label for="email">Correo</label>
-                            <input name="email" type="email" required placeholder="persona@mail.com">
+                            <input id="email" name="email" type="email" required placeholder="persona@mail.com">
                         </fieldset>
     
                         <fieldset>
                             <legend>Formación</legend>
                             
                             <label for="titulacion">Titulacion recibida</label>
-                            <input name="titulacion" type="text" required placeholder="Ingenieria Informatica">
+                            <input id="titulacion" name="titulacion" type="text" required placeholder="Ingenieria Informatica">
     
                             <label for="fechaInicio">Fecha de Inicio</label>
-                            <input name="fechaInicio" type="date" required>
+                            <input id="fechaInicio" name="fechaInicio" type="date" required>
     
                             <label for="fechaFin">Fecha de finalización</label>
-                            <input name="fechaFin" type="date" required>
+                            <input id="fechaFin" name="fechaFin" type="date" required>
                         </fieldset>
     
                         <fieldset>
                             <legend>Idiomas</legend>
     
                             <label for="idioma">Idioma</label>
-                            <input name="idioma" type="text" placeholder="Idioma que hablas">
+                            <input id="idioma" name="idioma" type="text" placeholder="Idioma que hablas">
     
                             <label for="nivelIdiomaHablado">Nivel hablado</label>
-                            <select name="nivelIdiomaHablado">
+                            <select id="nivelIdiomaHablado" name="nivelIdiomaHablado">
                                 <option value="Excelente">Excelente</option>
                                 <option value="Bien">Bien</option>
                                 <option value="Regular">Regular</option>
@@ -253,7 +255,7 @@
                             </select>
     
                             <label for="nivelIdiomaLeido">Nivel leido</label>
-                            <select name="nivelIdiomaLeido">
+                            <select id="nivelIdiomaLeido" name="nivelIdiomaLeido">
                                 <option value="Excelente">Excelente</option>
                                 <option value="Bien">Bien</option>
                                 <option value="Regular">Regular</option>
@@ -261,7 +263,7 @@
                             </select>
     
                             <label for="nivelIdiomaEscrito">Nivel escrito</label>
-                            <select name="nivelIdiomaEscrito">
+                            <select id="nivelIdiomaEscrito" name="nivelIdiomaEscrito">
                                 <option value="Excelente">Excelente</option>
                                 <option value="Bien">Bien</option>
                                 <option value="Regular">Regular</option>
